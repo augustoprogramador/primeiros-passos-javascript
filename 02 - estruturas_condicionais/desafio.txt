@@ -1,8 +1,10 @@
 Faça um programa para calcular o valor médio de uma viagemm:
 
-Você terá três variáveis:
-1 - Preço do combustível;
-2 - Gasto médio de combustível;
-3 - Distância percorrida em KM;
+Você terá cinco variáveis:
+1 - Preço do etanol;
+2 - Preço do gasolina;
+3 - O tipo de combustível do veículo;
+4 - Gasto médio de combustível;
+5 - Distância em KM da viagem;
 
 Imprima no console o valor que será gasto com combustível para a viagem.
