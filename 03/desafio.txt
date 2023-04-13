@@ -1,7 +1,0 @@
-1) Faça um algoritmo que dadas as 3 notas de um aluno, calcule e imprima a sua média e sua classificação conforme a tabela:
-
-Classificação:
-
-    - Média menor que 5, REPROVADO
-    - Média entre 5 e 7, RECUPERAÇÃO
-    - Média maior que 7, APROVADO
