@@ -17,7 +17,7 @@ function classificaAluno() {
     if (media < 5) {
         return 'REPROVADO';
     }
-    if (media > 5 && media <= 7) {
+    if (media >= 5 && media <= 7) {
         return 'RECUPERAÇÃO';
     }
     return 'APROVADO';
