@@ -20,18 +20,12 @@ function convertPokemonToHtml(pokemon) {
                 <ol class="types">
                     ${convertPokemonTypesToHtml(pokemonTratado.types).join('')}
                 </ol>
-                <img src="${getPokemonSprite(pokemonTratado)}" alt="${(pokemonTratado.name)}">
+                <img src="${pokemonTratado.photo}" alt="${(pokemonTratado.name)}">
             </div>
         </li>
     `;
 }
 
 function convertPokemonTypesToHtml(types) {
-    return types.map((typeSlot) => `<li class="type">${typeSlot.type.name}</li>`)
+    return types.map((type) => `<li class="type">${type}</li>`)
 }
-
-function getPokemonSprite(pokemon) {
-    return pokemon.sprites.other.dream_world.front_default;
-}
-
-
