@@ -5,27 +5,21 @@ pokeApi.getPokemons()
             pokemonsListElement.innerHTML += pokemons.map(convertPokemonToHtml).join('');
         });
 
-function tratarPokemon(pokemon) {
-    pokemon.name = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
-    return pokemon;
-}
-
 function convertPokemonToHtml(pokemon) {
-    const pokemonTratado = tratarPokemon(pokemon);
     return `
-        <li class="pokemon">
-            <span class="number">#${pokemonTratado.id}</span>
-            <span class="name">${(pokemonTratado.name)}</span>
+        <li class="pokemon ${pokemon.type}">
+            <span class="number">#${pokemon.id}</span>
+            <span class="name">${(pokemon.name)}</span>
             <div class="detail">
                 <ol class="types">
-                    ${convertPokemonTypesToHtml(pokemonTratado.types).join('')}
+                    ${convertPokemonTypesToHtml(pokemon.types).join('')}
                 </ol>
-                <img src="${pokemonTratado.photo}" alt="${(pokemonTratado.name)}">
+                <img src="${pokemon.photo}" alt="${(pokemon.name)}">
             </div>
         </li>
     `;
 }
 
 function convertPokemonTypesToHtml(types) {
-    return types.map((type) => `<li class="type">${type}</li>`)
+    return types.map((type) => `<li class="type ${type}">${type}</li>`)
 }
