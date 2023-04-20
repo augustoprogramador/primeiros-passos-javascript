@@ -73,6 +73,7 @@
     color: rgba(0, 0, 0, .5);
     mix-blend-mode: overlay;
     text-align: right;
+    text-shadow: 2px 2px 2px black;
     font-size: .625rem;
 }
 
